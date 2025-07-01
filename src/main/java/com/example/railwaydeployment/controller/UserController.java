@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.railwaydeployment.model.User;
 import com.example.railwaydeployment.repository.UserRepository;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://gmritregisterdemo-production.up.railway.app"
+})
 @RestController
 @RequestMapping("/api")
 public class UserController {
