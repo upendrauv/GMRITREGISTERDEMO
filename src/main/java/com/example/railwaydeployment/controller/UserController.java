@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,5 +33,10 @@ public class UserController {
         }
         repo.save(user);
         return ResponseEntity.status(HttpStatus.CREATED).body("User registered");
+    }
+    @GetMapping("/xyz")
+    String a()
+    {
+        return "111111111111111111111111111";
     }
 }
