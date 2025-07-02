@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.railwaydeployment.model.User;
 import com.example.railwaydeployment.repository.UserRepository;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:5175")
 @RestController
 @RequestMapping("/api")
 public class UserController {
